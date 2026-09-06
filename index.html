@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ashby — Software Engineer</title>
+  <title>ashbymatias</title>
   <meta name="description" content="Ashby — Computer Science student and aspiring software engineer. Portfolio of projects and experience." />
-  <meta name="theme-color" content="#faf9f7" />
+  <meta name="theme-color" content="#0a192f" />
 
-  <!-- Fonts: Fraunces for display/headings, Inter for body & UI -->
+  <!-- Fonts: Calibre-style sans (Inter) for UI/body, monospace (JetBrains Mono) for accents/labels -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -19,15 +19,30 @@
   <!-- ============ NAVIGATION ============ -->
   <header class="site-nav" id="site-nav">
     <div class="nav-inner">
-      <a href="#top" class="nav-name">Ashby<span class="nav-dot">.</span></a>
+      <a href="#top" class="nav-logo" aria-label="Home">a<span class="nav-logo-accent">.</span></a>
       <nav class="nav-links" aria-label="Primary">
-        <a href="#about" data-nav="about">About</a>
-        <a href="#experience" data-nav="experience">Experience</a>
-        <a href="#projects" data-nav="projects">Projects</a>
-        <a href="#contact" data-nav="contact">Contact</a>
+        <a href="#about" data-nav="about"><span class="nav-num">01.</span> About</a>
+        <a href="#experience" data-nav="experience"><span class="nav-num">02.</span> Experience</a>
+        <a href="#projects" data-nav="projects"><span class="nav-num">03.</span> Projects</a>
+        <a href="#contact" data-nav="contact"><span class="nav-num">04.</span> Contact</a>
       </nav>
     </div>
   </header>
+
+  <!-- ============ FIXED SIDE DECORATIONS ============ -->
+  <div class="side side-left" aria-hidden="true">
+    <ul class="side-socials">
+      <li><a href="https://github.com/Tatsuoo19" target="_blank" rel="noopener" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.4 7.86 10.93.57.1.79-.25.79-.55 0-.27-.01-1.16-.02-2.11-3.2.7-3.88-1.36-3.88-1.36-.52-1.34-1.28-1.69-1.28-1.69-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.58.24 2.75.12 3.04.74.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.08.78 2.17 0 1.56-.01 2.82-.01 3.2 0 .3.21.66.8.55A10.51 10.51 0 0 0 23.5 12c0-6.35-5.15-11.5-11.5-11.5Z"/></svg>
+      </a></li>
+      <li><a href="https://www.linkedin.com/in/ashby-stefano-matias-636518385/" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.11 20.45H3.56V9h3.55v11.45Z"/></svg>
+      </a></li>
+      <li><a href="mailto:ashbymatias@gmailc.om" aria-label="Email">
+        <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M2 5.5A1.5 1.5 0 0 1 3.5 4h17A1.5 1.5 0 0 1 22 5.5v13a1.5 1.5 0 0 1-1.5 1.5h-17A1.5 1.5 0 0 1 2 18.5v-13Zm2.2.5 7.8 6.5L19.8 6H4.2Zm15.8 1.6-7.4 6.16a1 1 0 0 1-1.2 0L4 7.6V18h16V7.6Z"/></svg>
+      </a></li>
+    </ul>
+  </div>
 
   <main id="top">
 
@@ -35,75 +50,72 @@
     <section class="hero">
       <div class="container hero-inner">
         <div class="hero-text">
-          <p class="eyebrow reveal">Portfolio — 2026</p>
-          <h1 class="hero-title reveal">
-            Hi, I'm Ashby.
-          </h1>
+          <p class="hero-greeting reveal">Hi, my name is</p>
+          <h1 class="hero-title reveal">Ashby.</h1>
+          <br>
           <p class="hero-sub reveal">
-            Computer Science student and aspiring software engineer, currently
-            learning to build web applications and turn ideas into working
-            software.
+            I'm a Computer Science student and aspiring software engineer,
+            currently focused on building accessible, useful web
+            applications and turning ideas into working software.
           </p>
           <div class="hero-actions reveal">
             <a href="#contact" class="say-hi">
               <span>Say hi</span>
-              <span class="arrow" aria-hidden="true">&rarr;</span>
             </a>
-            <a href="#projects" class="hero-secondary">See my work</a>
+            <a href="#projects" class="hero-secondary">See my work &rarr;</a>
           </div>
         </div>
- 
-        <!-- Replace this placeholder with an <img src="your-photo.jpg" alt="Ashby"> when ready -->
+
+        <!-- Replace this placeholder with an <img src="assets/gradpic.jpg" alt="Ashby"> when ready -->
         <div class="hero-photo reveal">
-          <div class="hero-photo-placeholder" >
-            <img src ="assets/gradpic.jpg" alt = "Ashby">
+          <div class="hero-photo-frame">
+            <div class="hero-photo-placeholder">
+              <img src="assets/gradpic.jpg" alt="Ashby">
+            </div>
           </div>
         </div>
       </div>
     </section>
-
-    <div class="divider container"></div>
 
     <!-- ============ ABOUT ============ -->
     <section id="about" class="section about">
-      <div class="container section-grid">
-        <div class="section-label reveal">
-          <span>/ about me</span>
-        </div>
-        <div class="section-content">
-          <p class="about-text reveal">
-            I'm currently studying Computer Science and working toward
-            becoming a software engineer. I'm interested in building web
-            applications, learning new technologies, and turning ideas into
-            functional, useful products — one small project at a time.
-          </p>
+      <div class="container">
+        <h2 class="section-heading reveal"><span class="heading-num">01.</span> About Me<span class="heading-line"></span></h2>
 
-          <div class="skills reveal">
-            <p class="skills-label">Technologies I work with</p>
-            <ul class="skills-list">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-              <li>Java</li>
-              <li>C++</li>
-              <li>Python</li>
-              <li>Git</li>
-              <li>GitHub</li>
-            </ul>
+        <div class="section-grid">
+          <div class="section-content">
+            <p class="about-text reveal">
+              I'm currently studying Computer Science and working toward
+              becoming a software engineer. I'm interested in building web
+              applications, learning new technologies, and turning ideas
+              into functional, useful products — one small project at a
+              time.
+            </p>
+
+            <div class="skills reveal">
+              <p class="skills-label">Technologies I work with</p>
+              <ul class="skills-list">
+                <li><span class="bullet">▹</span> HTML</li>
+                <li><span class="bullet">▹</span> CSS</li>
+                <li><span class="bullet">▹</span> JavaScript</li>
+                <li><span class="bullet">▹</span> Java</li>
+                <li><span class="bullet">▹</span> C++</li>
+                <li><span class="bullet">▹</span> Python</li>
+                <li><span class="bullet">▹</span> Git</li>
+                <li><span class="bullet">▹</span> GitHub</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <div class="divider container"></div>
-
     <!-- ============ EXPERIENCE ============ -->
     <section id="experience" class="section experience">
-      <div class="container section-grid">
-        <div class="section-label reveal">
-          <span>/ experience</span>
-        </div>
-        <div class="section-content">
+      <div class="container">
+        <h2 class="section-heading reveal"><span class="heading-num">02.</span> Experience<span class="heading-line"></span></h2>
+
+        <div class="section-content full">
 
           <article class="exp-item reveal">
             <div class="exp-meta">
@@ -111,9 +123,9 @@
               <p class="exp-time">2024 — Present</p>
             </div>
             <ul class="exp-list">
-              <li>Studying computer science and software development fundamentals.</li>
-              <li>Building small projects using multiple programming languages.</li>
-              <li>Learning data structures, algorithms, and web development.</li>
+              <li><span class="bullet">▹</span> Studying computer science and software development fundamentals.</li>
+              <li><span class="bullet">▹</span> Building small projects using multiple programming languages.</li>
+              <li><span class="bullet">▹</span> Learning data structures, algorithms, and web development.</li>
             </ul>
           </article>
 
@@ -123,9 +135,9 @@
               <p class="exp-time">2025</p>
             </div>
             <ul class="exp-list">
-              <li>Built small websites for local clients using HTML, CSS, and JavaScript.</li>
-              <li>Collaborated directly with clients to plan layout and content.</li>
-              <li>Handled deployment and basic maintenance after launch.</li>
+              <li><span class="bullet">▹</span> Built small websites for local clients using HTML, CSS, and JavaScript.</li>
+              <li><span class="bullet">▹</span> Collaborated directly with clients to plan layout and content.</li>
+              <li><span class="bullet">▹</span> Handled deployment and basic maintenance after launch.</li>
             </ul>
           </article>
 
@@ -135,9 +147,9 @@
               <p class="exp-time">2023 — Present</p>
             </div>
             <ul class="exp-list">
-              <li>Designed and shipped several personal and academic projects.</li>
-              <li>Practiced version control and collaborative workflows with Git.</li>
-              <li>Explored backend basics alongside frontend development.</li>
+              <li><span class="bullet">▹</span> Designed and shipped several personal and academic projects.</li>
+              <li><span class="bullet">▹</span> Practiced version control and collaborative workflows with Git.</li>
+              <li><span class="bullet">▹</span> Explored backend basics alongside frontend development.</li>
             </ul>
           </article>
 
@@ -145,17 +157,15 @@
       </div>
     </section>
 
-    <div class="divider container"></div>
-
     <!-- ============ PROJECTS ============ -->
     <section id="projects" class="section projects">
-      <div class="container section-grid">
-        <div class="section-label reveal">
-          <span>/ projects</span>
-        </div>
-        <div class="section-content">
+      <div class="container">
+        <h2 class="section-heading reveal"><span class="heading-num">03.</span> Projects<span class="heading-line"></span></h2>
+
+        <div class="section-content full">
 
           <a href="#" class="project reveal">
+            <p class="project-overline">Featured Project</p>
             <div class="project-head">
               <h3 class="project-title">Food Finds</h3>
               <span class="project-arrow" aria-hidden="true">&#8599;</span>
@@ -165,14 +175,11 @@
               university campus, built to help students find meals quickly
               between classes.
             </p>
-            <div class="project-meta">
-              <span class="tech">HTML</span>
-              <span class="tech">CSS</span>
-              <span class="tech">JavaScript</span>
-            </div>
+            <p class="project-tech">HTML &nbsp;·&nbsp; CSS &nbsp;·&nbsp; JavaScript</p>
           </a>
 
           <a href="#" class="project reveal">
+            <p class="project-overline">Featured Project</p>
             <div class="project-head">
               <h3 class="project-title">Smart Tindahan</h3>
               <span class="project-arrow" aria-hidden="true">&#8599;</span>
@@ -181,15 +188,11 @@
               A digital inventory and sales management system designed for
               small sari-sari stores, replacing manual paper tracking.
             </p>
-            <div class="project-meta">
-              <span class="tech">HTML</span>
-              <span class="tech">CSS</span>
-              <span class="tech">JavaScript</span>
-              <span class="tech">Python</span>
-            </div>
+            <p class="project-tech">HTML &nbsp;·&nbsp; CSS &nbsp;·&nbsp; JavaScript &nbsp;·&nbsp; Python</p>
           </a>
 
           <a href="#" class="project reveal">
+            <p class="project-overline">Featured Project</p>
             <div class="project-head">
               <h3 class="project-title">Portfolio Website</h3>
               <span class="project-arrow" aria-hidden="true">&#8599;</span>
@@ -198,14 +201,11 @@
               My personal developer portfolio — the very site you're looking
               at right now, built from scratch with plain HTML, CSS, and JS.
             </p>
-            <div class="project-meta">
-              <span class="tech">HTML</span>
-              <span class="tech">CSS</span>
-              <span class="tech">JavaScript</span>
-            </div>
+            <p class="project-tech">HTML &nbsp;·&nbsp; CSS &nbsp;·&nbsp; JavaScript</p>
           </a>
 
           <a href="#" class="project reveal">
+            <p class="project-overline">Featured Project</p>
             <div class="project-head">
               <h3 class="project-title">Educational Gaming Website</h3>
               <span class="project-arrow" aria-hidden="true">&#8599;</span>
@@ -214,29 +214,23 @@
               An interactive educational platform designed to help students
               explore Earth Science and Pre-Calculus through short games.
             </p>
-            <div class="project-meta">
-              <span class="tech">HTML</span>
-              <span class="tech">CSS</span>
-              <span class="tech">JavaScript</span>
-            </div>
+            <p class="project-tech">HTML &nbsp;·&nbsp; CSS &nbsp;·&nbsp; JavaScript</p>
           </a>
 
         </div>
       </div>
     </section>
 
-    <div class="divider container"></div>
-
     <!-- ============ CONTACT ============ -->
     <section id="contact" class="section contact">
       <div class="container">
-        <p class="eyebrow reveal">/ contact</p>
-        <h2 class="contact-title reveal">Let's build something.</h2>
+        <p class="heading-num contact-num reveal">04. What's Next?</p>
+        <h2 class="contact-title reveal">Get In Touch</h2>
         <p class="contact-sub reveal">
           I'm always open to new projects, collaborations, or just talking
-          about code. My inbox is open.
+          about code. My inbox is open — say hi!
         </p>
-        <a href="mailto:ashbymatias@gmail.com" class="contact-email reveal">ashbymatias@gmail.com</a>
+        <a href="mailto:ashbymatias@gmail.com" class="contact-email reveal">Say Hello</a>
       </div>
     </section>
 
@@ -245,15 +239,13 @@
   <!-- ============ FOOTER ============ -->
   <footer class="site-footer">
     <div class="container footer-inner">
-      <div class="footer-left">
-        <p class="footer-name">Ashby</p>
-        <p class="footer-copy">&copy; <span id="year"></span> Ashby. All rights reserved.</p>
-      </div>
-      <div class="footer-links">
+      <div class="footer-socials">
+        <a href="https://github.com/Tatsuoo19" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/ashby-stefano-matias-636518385/" target="_blank" rel="noopener">LinkedIn</a>
         <a href="mailto:ashbymatias@gmail.com">Email</a>
-        <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
       </div>
+      <p class="footer-copy">Designed &amp; Built by Ashby x Claude · &copy; <span id="year"></span></p>
+      <p class="footer-copy">Inspired by Gazi Jarin </p>
     </div>
   </footer>
 
