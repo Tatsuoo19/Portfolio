@@ -318,7 +318,6 @@ ul { margin: 0; padding: 0; list-style: none; }
   width: 100%;
   aspect-ratio: 1 / 1;
   border-radius: 6px;
-  background: var(--green);
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -331,8 +330,7 @@ ul { margin: 0; padding: 0; list-style: none; }
   object-fit: cover;
   display: block;
   filter: grayscale(60%) contrast(1);
-  mix-blend-mode: luminosity;
-  opacity: 0.85;
+  opacity: 1;
   transition: filter 0.3s ease, mix-blend-mode 0.3s ease, opacity 0.3s ease;
 }
 
